@@ -73,3 +73,17 @@ input[type="number"]::-webkit-outer-spin-button {
     -moz-box-shadow: 2px 2px 12px 15px rgba(34, 60, 80, 0.25);
     box-shadow: 2px 2px 12px 15px rgba(34, 60, 80, 0.25);
 }
+@keyframes changeBackgroundColor {
+    0% { background-color: red; } /* Начальный цвет */
+    25% { background-color: blue; } /* Цвет через четверть анимации */
+    50% { background-color: green; } /* Цвет в середине */
+    75% { background-color: yellow; } /* Цвет через 3/4 анимации */
+    100% { background-color: red; } /* Возврат к начальному цвету */
+}
+body {
+    width: 200px;
+    height: 200px;
+    animation-name: changeBackgroundColor; /* Название анимации */
+    animation-duration: 1s; /* Общая длительность одного цикла анимации */
+    animation-iteration-count: infinite; /* Бесконечное повторение */
+}
